@@ -1,0 +1,14 @@
+/* 自定义命名空间，必须配合 el-config-provider 一起才生效 */
+@forward 'element-plus/theme-chalk/src/mixins/config.scss' with (
+  $namespace: 'ep'
+);
+
+/* 覆盖 element 的样式 */
+// https://github.com/element-plus/element-plus/blob/dev/packages/theme-chalk/src/common/var.scss
+@forward 'element-plus/theme-chalk/src/common/var.scss' with (
+  $colors: (
+    'primary': (
+      'base': #f9a84d
+    )
+  )
+);

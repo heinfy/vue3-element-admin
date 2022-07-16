@@ -1,0 +1,17 @@
+/* 覆盖 element 默认的暗黑样式 */
+// https://element-plus.gitee.io/zh-CN/guide/dark-mode.html#%E5%A6%82%E4%BD%95%E5%90%AF%E7%94%A8%EF%BC%9F
+
+@forward 'element-plus/theme-chalk/src/dark/var.scss' with (
+  $bg-color: (
+    'page': #0a0a0a,
+    '': #626aef,
+    'overlay': #1d1e1f
+  ),
+  $colors: (
+    'primary': (
+      'base':  #f81744
+    )
+  )
+);
+
+@use "element-plus/theme-chalk/src/dark/css-vars.scss" as *;
