@@ -23,7 +23,7 @@
 </template>
 
 <script setup>
-import { defineComponent, defineProps } from '_vue@3.2.37@vue';
+import { defineComponent, defineProps } from 'vue';
 // @ is an alias to /src
 import TestCom from '@/components/TestCom';
 import { isDark, toggleDark } from '@/composables';

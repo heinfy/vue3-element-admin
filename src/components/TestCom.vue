@@ -5,7 +5,7 @@
 </template>
 
 <script setup>
-import { defineComponent, defineProps } from '_vue@3.2.37@vue';
+import { defineComponent, defineProps } from 'vue';
 defineComponent({
   name: 'TestCom'
 });
