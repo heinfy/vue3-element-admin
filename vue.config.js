@@ -5,6 +5,7 @@ const ElementPlus = require('unplugin-element-plus/webpack');
 const { ElementPlusResolver } = require('unplugin-vue-components/resolvers');
 
 module.exports = defineConfig({
+  publicPath: '/vue3-element-admin/', // process.env.NODE_ENV === 'production' ? '/vue3-element-admin/' : '/',
   transpileDependencies: true,
   css: {
     loaderOptions: {
